@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "004-remove-duplicates-from-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005-remove-element", "005-remove-element\005-remove-element.csproj", "{64C9181A-7B4A-4ABA-862B-81C87D755B30}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006-find-the-index-of-the-first-occurence-in-a-string", "006-find-the-index-of-the-first-occurence-in-a-string\006-find-the-index-of-the-first-occurence-in-a-string.csproj", "{15C69881-D18F-43B3-9305-18469714F426}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{64C9181A-7B4A-4ABA-862B-81C87D755B30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64C9181A-7B4A-4ABA-862B-81C87D755B30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64C9181A-7B4A-4ABA-862B-81C87D755B30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15C69881-D18F-43B3-9305-18469714F426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15C69881-D18F-43B3-9305-18469714F426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15C69881-D18F-43B3-9305-18469714F426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15C69881-D18F-43B3-9305-18469714F426}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
