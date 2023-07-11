@@ -10,9 +10,14 @@ namespace _004_remove_duplicates_from_sorted_array
     {
         public int RemoveDuplicates(int[] nums)
         {
-            var dsc= nums.Distinct().ToList();
+            var dsc= nums.Distinct().ToArray();
 
-            return dsc.Count;
+            for (int i = 0; i < dsc.Length; i++)
+            {
+                nums[i] = dsc[i];
+            }
+
+            return dsc.Length;
         }
     }
 }
