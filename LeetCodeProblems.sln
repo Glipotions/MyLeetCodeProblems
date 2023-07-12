@@ -11,9 +11,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "003-valid-parentheses", "00
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "004-remove-duplicates-from-sorted-array", "004-remove-duplicates-from-sorted-array\004-remove-duplicates-from-sorted-array.csproj", "{DA4CE6A2-480C-44F3-B883-FC973BA208BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "005-remove-element", "005-remove-element\005-remove-element.csproj", "{64C9181A-7B4A-4ABA-862B-81C87D755B30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "005-remove-element", "005-remove-element\005-remove-element.csproj", "{64C9181A-7B4A-4ABA-862B-81C87D755B30}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "006-find-the-index-of-the-first-occurence-in-a-string", "006-find-the-index-of-the-first-occurence-in-a-string\006-find-the-index-of-the-first-occurence-in-a-string.csproj", "{15C69881-D18F-43B3-9305-18469714F426}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "006-find-the-index-of-the-first-occurence-in-a-string", "006-find-the-index-of-the-first-occurence-in-a-string\006-find-the-index-of-the-first-occurence-in-a-string.csproj", "{15C69881-D18F-43B3-9305-18469714F426}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007-search-insert-position", "007-search-insert-position\007-search-insert-position.csproj", "{F86FDD8E-1DF8-4840-928C-FEBD1AAC0DF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008-length of last word", "008-length of last word\008-length of last word.csproj", "{BDA0EBF8-D7FD-421A-85C5-8956A2B3E159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "009-plus one", "009-plus one\009-plus one.csproj", "{E7C612E0-76F5-4554-BE24-67CFC0CCBCF4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +51,18 @@ Global
 		{15C69881-D18F-43B3-9305-18469714F426}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15C69881-D18F-43B3-9305-18469714F426}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15C69881-D18F-43B3-9305-18469714F426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F86FDD8E-1DF8-4840-928C-FEBD1AAC0DF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F86FDD8E-1DF8-4840-928C-FEBD1AAC0DF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F86FDD8E-1DF8-4840-928C-FEBD1AAC0DF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F86FDD8E-1DF8-4840-928C-FEBD1AAC0DF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDA0EBF8-D7FD-421A-85C5-8956A2B3E159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDA0EBF8-D7FD-421A-85C5-8956A2B3E159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDA0EBF8-D7FD-421A-85C5-8956A2B3E159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDA0EBF8-D7FD-421A-85C5-8956A2B3E159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7C612E0-76F5-4554-BE24-67CFC0CCBCF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7C612E0-76F5-4554-BE24-67CFC0CCBCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7C612E0-76F5-4554-BE24-67CFC0CCBCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7C612E0-76F5-4554-BE24-67CFC0CCBCF4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
