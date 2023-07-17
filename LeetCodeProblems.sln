@@ -15,11 +15,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "005-remove-element", "005-r
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "006-find-the-index-of-the-first-occurence-in-a-string", "006-find-the-index-of-the-first-occurence-in-a-string\006-find-the-index-of-the-first-occurence-in-a-string.csproj", "{15C69881-D18F-43B3-9305-18469714F426}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "007-search-insert-position", "007-search-insert-position\007-search-insert-position.csproj", "{F86FDD8E-1DF8-4840-928C-FEBD1AAC0DF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "007-search-insert-position", "007-search-insert-position\007-search-insert-position.csproj", "{F86FDD8E-1DF8-4840-928C-FEBD1AAC0DF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "008-length of last word", "008-length of last word\008-length of last word.csproj", "{BDA0EBF8-D7FD-421A-85C5-8956A2B3E159}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "008-length of last word", "008-length of last word\008-length of last word.csproj", "{BDA0EBF8-D7FD-421A-85C5-8956A2B3E159}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "009-plus one", "009-plus one\009-plus one.csproj", "{E7C612E0-76F5-4554-BE24-67CFC0CCBCF4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "009-plus one", "009-plus one\009-plus one.csproj", "{E7C612E0-76F5-4554-BE24-67CFC0CCBCF4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "010-add binary", "010-add binary\010-add binary.csproj", "{5F68220E-3D6A-41ED-A0CF-7A5F41F1A1FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "allProjects-0001", "allProjects-0001\allProjects-0001.csproj", "{DA4BAE79-46EF-47F4-A57F-63A35A6B4B53}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{E7C612E0-76F5-4554-BE24-67CFC0CCBCF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7C612E0-76F5-4554-BE24-67CFC0CCBCF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7C612E0-76F5-4554-BE24-67CFC0CCBCF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F68220E-3D6A-41ED-A0CF-7A5F41F1A1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F68220E-3D6A-41ED-A0CF-7A5F41F1A1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F68220E-3D6A-41ED-A0CF-7A5F41F1A1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F68220E-3D6A-41ED-A0CF-7A5F41F1A1FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA4BAE79-46EF-47F4-A57F-63A35A6B4B53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA4BAE79-46EF-47F4-A57F-63A35A6B4B53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA4BAE79-46EF-47F4-A57F-63A35A6B4B53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA4BAE79-46EF-47F4-A57F-63A35A6B4B53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

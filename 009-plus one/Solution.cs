@@ -11,22 +11,21 @@ namespace _009_plus_one
     {
         public static int[] PlusOne(int[] digits)
         {
-            string numStr = "";
-            foreach (int i in digits)
+            int n = digits.Length;
+            for (int i = n - 1; i >= 0; i--)
             {
-                numStr += i;
+                if (digits[i] < 9)
+                {
+                    digits[i]++;
+                    return digits;
+                }
+                digits[i] = 0;
             }
-            var num = int.Parse(numStr);
-            num++;
+            int[] newNumber = new int[n + 1];
+            newNumber[0] = 1;
 
+            return newNumber;
 
-            List<int> retArr = new();
-            foreach (var item in num.ToString())
-            {
-                retArr.Add(Convert.ToInt32(new string(item, 1)));
-            }
-
-            return retArr.ToArray();
         }
     }
 }
