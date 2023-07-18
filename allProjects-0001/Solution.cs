@@ -17,7 +17,7 @@ namespace allProjects_0001
             for (double i = 0; i <= x; i++)
             {
                 if (i * i > x)
-                    return (int)Math.Floor(i-1);
+                    return (int)Math.Floor(i - 1);
             }
 
             return 0;
@@ -30,7 +30,7 @@ namespace allProjects_0001
             else if (n == 2) return 2;
 
             int a = 1, b = 2, c = 0;
-            for (int i = 2; i <= n; i++)
+            for (int i = 2; i < n; i++)
             {
                 c = a + b;
                 a = b;
@@ -40,5 +40,42 @@ namespace allProjects_0001
             return c;
 
         }
+
+        public ListNode DeleteDuplicates(ListNode head)
+        {
+            if (head == null || head.next == null) return head;
+            ListNode? temp = head;
+
+            while (temp != null)
+            {
+                if (temp.val == temp.next?.val)
+                    temp.next = temp.next.next;
+                else
+                    temp = temp.next;
+            }
+            return head;
+        }
+
+
+        public void Merge(int[] nums1, int m, int[] nums2, int n)
+        {
+            List<int> nums1L = nums1.Take(m).ToList();
+            List<int> nums2L = nums2.Take(n).ToList();
+
+            nums1 = nums1L.Concat(nums2L).OrderBy(x => x).ToArray();
+
+        }
     }
+
+    public class ListNode
+    {
+        public int val;
+        public ListNode next;
+        public ListNode(int val = 0, ListNode next = null)
+        {
+            this.val = val;
+            this.next = next;
+        }
+    }
+
 }
