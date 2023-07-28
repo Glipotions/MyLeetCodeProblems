@@ -59,11 +59,73 @@ namespace allProjects_0001
 
         public void Merge(int[] nums1, int m, int[] nums2, int n)
         {
-            List<int> nums1L = nums1.Take(m).ToList();
-            List<int> nums2L = nums2.Take(n).ToList();
+            //List<int> nums1L = nums1.Take(m).ToList();
+            //List<int> nums2L = nums2.Take(n).ToList();
 
-            nums1 = nums1L.Concat(nums2L).OrderBy(x => x).ToArray();
+            //var merge = nums1L.Concat(nums2L).OrderBy(x => x).ToArray();
+            //nums1 = merge;
+            //return merge;
 
+            var lngt = nums1.Length;
+            for (int i = 0; i < n; i++)
+            {
+                nums1[m + i] = nums2[i];
+
+            }
+            for (int i = 0; i < m + n; i++)
+            {
+                if (i - 1 < lngt && i - 1 >= 0)
+                {
+                    if (nums1[i] < nums1[i - 1])
+                    {
+                        int sayi1 = nums1[i - 1];
+                        nums1[i - 1] = nums1[i];
+                        nums1[i] = sayi1;
+                    }
+                }
+            }
+        }
+
+        public bool IsPalindrome(int x)
+        {
+            if (x < 0) return false;
+
+            var yazi = x.ToString();
+            for (int i = 0; i < yazi.Length - 1; i++)
+            {
+                if (yazi[i] != yazi[(yazi.Length - 1) - i]) return false;
+            }
+            return true;
+        }
+
+        public bool IsMatch(string s, string p)
+        {
+            if (s.Length != p.Length) return false;
+            var sArr = s.ToArray();
+            var pArr = p.ToArray();
+            if (p.Contains("."))
+            {
+                var ch = p.IndexOf(".");
+                pArr[ch] = s[ch];
+            }
+            if (p.Contains("*"))
+            {
+                var ch = p.IndexOf("*");
+                if (sArr[ch - 1] <= sArr[ch])
+                {
+                    pArr[ch] = sArr[ch];
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            var sStr = new string(sArr);
+            var pStr = new string(pArr);
+            if (sStr == pStr) return true;
+
+            return false;
         }
     }
 
