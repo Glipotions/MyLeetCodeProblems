@@ -14,9 +14,9 @@ var sol = new Solution();
 //sol.IsMatch("aab", "c*a*b");
 
 
-Console.WriteLine(sol.MaxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }));
+//Console.WriteLine(sol.MaxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }));
 
-
+sol.PascalsTriangleGenerate(5);
 
 
 Console.ReadLine();
