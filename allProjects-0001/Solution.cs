@@ -193,6 +193,42 @@ namespace allProjects_0001
             }
             return pascals;
         }
+        public IList<int> PascalsTriangleGetRow(int numRows)
+        {
+            IList<int> pascalRows = new List<int>();
+            IList<IList<int>> pascals = new List<IList<int>>();
+
+            for (int i = 0; i < numRows; i++)
+            {
+                pascalRows = new List<int>();
+                if (i == 0)
+                {
+                    pascalRows = new List<int>() { 1 };
+                }
+                else
+                {
+                    var prevPascalRow = pascals[i - 1];
+                    for (int j = 0; j <= i; j++)
+                    {
+                        if (j == 0)
+                        {
+                            pascalRows.Add(1);
+                        }
+                        else if (j == i)
+                        {
+                            pascalRows.Add(1);
+                        }
+                        else
+                        {
+                            pascalRows.Add(prevPascalRow[j - 1] + prevPascalRow[j]);
+                        }
+                    }
+                }
+
+                pascals.Add(pascalRows);
+            }
+            return pascalRows;
+        }
     }
 
     public class ListNode
