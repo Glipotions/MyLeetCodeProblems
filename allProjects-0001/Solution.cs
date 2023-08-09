@@ -127,6 +127,35 @@ namespace allProjects_0001
 
             return false;
         }
+
+        public int MaxArea(int[] height)
+        {
+            var length = height.Length-1;
+
+            int t = 0;
+            int maxArea = 0;
+
+
+            for (int i = 0; i < length; i++)
+            {
+                for (int j = 0; j < length; j++)
+                {
+                    if (height[i] > height[j])
+                    {
+                        if (height[j] * (j - i) > maxArea)
+                            maxArea = height[j] * (j  - i);
+                    }
+                    else
+                    {
+                        if (height[i] * (i  - j) > maxArea)
+                            maxArea = height[i] * (i  - j);
+                    }
+                }
+            }
+
+            return maxArea;
+
+        }
     }
 
     public class ListNode
