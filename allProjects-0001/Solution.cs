@@ -229,6 +229,22 @@ namespace allProjects_0001
             }
             return pascalRows;
         }
+
+        public int MaxProfit(int[] prices)
+        {
+
+
+            var min = prices[0];
+            var profit = 0;
+            foreach (var item in prices)
+            {
+                profit = Math.Max(profit, item - min);
+                min = Math.Min(item, min);
+            }
+
+            return profit;
+        }
+
     }
 
     public class ListNode
