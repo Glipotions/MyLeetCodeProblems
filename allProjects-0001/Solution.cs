@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace allProjects_0001
@@ -245,6 +246,26 @@ namespace allProjects_0001
             return profit;
         }
 
+
+        public bool IsPalindrome(string s)
+        {
+            s = s.Replace(" ", "").ToLower();
+            s = Regex.Replace(s, "[^a-zA-Z0-9]", "");
+            var t = string.Empty;
+            //var reverse = s.Reverse().Select(x => t += x).LastOrDefault("");
+            foreach (var item in s)
+            {
+                t = item+t;
+            }
+            var ret = t == s;
+
+            return ret;
+        }
+
+        public int SingleNumber(int[] nums)
+        {
+
+        }
     }
 
     public class ListNode

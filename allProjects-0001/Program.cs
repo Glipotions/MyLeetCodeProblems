@@ -17,7 +17,8 @@ var sol = new Solution();
 //Console.WriteLine(sol.MaxArea(new int[] { 1, 8, 6, 2, 5, 4, 8, 3, 7 }));
 
 //sol.PascalsTriangleGenerate(5);
-sol.MaxProfit(new int[] { 7, 6, 4, 3, 1 });
+//sol.MaxProfit(new int[] { 7, 6, 4, 3, 1 });
+sol.IsPalindrome("A man, a plan, a canal: Panama");
 
 
 Console.ReadLine();
